@@ -1,0 +1,23 @@
+{{#extends 'base'}}
+{{#block 'content'}}
+    <form method="POST">
+        <div>
+            <label>Movie ID</label>
+            <input type="text" class="form-control" name="id" value={{id}}/>
+        </div>
+        <div>
+            <label>Title of Movie</label>
+            <input type="text" class="form-control" name="title" value={{title}}//>
+        </div>
+        <div>
+            <label>Plot of Movie</label>
+            <input type="textarea" class="form-control" name="plot" value={{plot}}/>
+        </div>
+        <input type="submit" value="Update Movie" class="btn btn-primary mt-3"/>
+        {{!-- <a href="/movie/edit{{this.id}}" class=""btn btn="primary">Go</a> --}}
+
+    </form>
+
+{{/block}}
+
+{{/extends}}

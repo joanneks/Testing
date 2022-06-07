@@ -1,0 +1,15 @@
+{{#extends 'base'}}
+{{#block 'content'}}
+    <form method="POST">
+    <h1>Delete movie?</h1>
+    <div>
+        Are you sure you want to delete "{{title}}"?
+        <br/>
+        Plot: 
+        "{{plot}}"
+    </div>
+    <input type="submit" class="btn btn-danger" value="Delete"/>
+    <a href="/" class="btn btn-success">Cancel</a>
+    </form>
+{{/block}}
+{{/extends}}
